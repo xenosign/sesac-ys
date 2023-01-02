@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { useState } from "react";
+import ClassState from "./components/ClassState";
 
 function App() {
+  let [state, setState] = useState({ teacher: "이효석" });
+  console.log(state);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button
+        onClick={() => {
+          state.teacher = "tetz";
+          const copyObj = { ...state };
+          setState(copyObj);
+          console.log(state);
+        }}
+      >
+        영어로!
+      </button>
+      <br />
+      <span>{state.teacher}</span>
     </div>
   );
 }
-
 export default App;
