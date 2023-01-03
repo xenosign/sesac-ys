@@ -4,22 +4,12 @@ import { useState } from "react";
 import ClassState from "./components/ClassState";
 
 function App() {
-  let [state, setState] = useState({ teacher: "이효석" });
-  console.log(state);
+  let [count, setCount] = useState(0);
   return (
     <div className="App">
-      <button
-        onClick={() => {
-          state.teacher = "tetz";
-          const copyObj = { ...state };
-          setState(copyObj);
-          console.log(state);
-        }}
-      >
-        영어로!
-      </button>
+      <span style={{ fontSize: "100px" }} onClick={() => setCount(count += 1)}> {count < 10 ? "👍" : "😎"} </span>
       <br />
-      <span>{state.teacher}</span>
+      <span style={{ fontSize: "100px" }}>{count}</span>
     </div>
   );
 }
