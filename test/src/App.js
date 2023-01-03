@@ -7,7 +7,7 @@ function App() {
   let [count, setCount] = useState(0);
   return (
     <div className="App">
-      <span style={{ fontSize: "100px" }} onClick={() => setCount(count += 1)}> {count < 10 ? "👍" : "😎"} </span>
+      <span style={{ fontSize: "130px" }} onClick={() => setCount(count += 1)}> {count < 10 ? "👍" : "😎"} </span>
       <br />
       <span style={{ fontSize: "100px" }}>{count}</span>
     </div>
