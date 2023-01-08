@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 export default function ChangeObj(props) {
   const [index, changeIndex] = useState(0);
   let data = props.objArr[index];
