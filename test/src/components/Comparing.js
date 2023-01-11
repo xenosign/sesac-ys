@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState } from 'react';
 
 const Comparing = () => {
   const [countState, setState] = useState(0);
@@ -7,15 +7,15 @@ const Comparing = () => {
   let countVar = 0;
   const countUpState = () => {
     setState(countState + 1);
-    console.log("State: ", countState);
+    console.log('State: ', countState);
   };
   const countUpRef = () => {
     countRef.current = countRef.current + 1;
-    console.log("Ref: ", countRef.current);
+    console.log('Ref: ', countRef.current);
   };
   const countUpVar = () => {
     countVar = countVar + 1;
-    console.log("Variable: ", countVar);
+    console.log('Variable: ', countVar);
   };
   const reRender = () => {
     setRender(!render);
