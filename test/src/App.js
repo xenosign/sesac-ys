@@ -15,14 +15,20 @@ import ChangeFocus from './components/ChangeFocus';
 import RefDOM from './components/RefDOM';
 import Table from './components/Table';
 import ConditionalRender from './components/ConditionalRender';
+<<<<<<< Updated upstream
 import FancyBorder from './components/FancyBorder';
 import Profile from './components/Profile';
 import Board from './components/Board';
 import { Routes, Route, Link } from 'react-router-dom';
+=======
+import UseEffectFetch from './components/UseEffectFetch';
+import GetDataFromAPI from './components/GetDataFromAPI';
+>>>>>>> Stashed changes
 
 function App() {
   return (
     <div className="App">
+<<<<<<< Updated upstream
       <nav>
         <ul>
           <li>
@@ -40,6 +46,9 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/board" element={<Board />} />
       </Routes>
+=======
+      <GetDataFromAPI />
+>>>>>>> Stashed changes
     </div>
   );
 }
