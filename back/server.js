@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
       nickName: '사고뭉치',
     },
     {
-      name: '루피',
+      name: '루-피',
       age: '4',
       nickName: '공주님',
     },
